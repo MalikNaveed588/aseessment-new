@@ -1,12 +1,18 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { increaseBlogViewCounter } from "../../redux/actions/blog";
 
 import "./index.scss";
 const Blog = ({ item }) => {
   const dispatch = useDispatch();
-  const increaseCounter = () => dispatch(increaseBlogViewCounter(item.id));
+  const navigate = useNavigate();
+
+  const increaseCounter = () => {
+    dispatch(increaseBlogViewCounter(item.id));
+    navigate(`/blog-detail/${item.id}`);
+  };
 
   const { blogClicks } = useSelector((item) => item.blog);
 

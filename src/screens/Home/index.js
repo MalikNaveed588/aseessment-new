@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getBlogs } from "../../API";
 import { setBlogs } from "../../redux/actions/blog";
 
-import { Blog, Featured,Navbar,Footer } from "../../components";
+import { Blog, Featured, Navbar, Footer } from "../../components";
 
 import "./index.scss";
 
@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <React.Fragment>
-      <Navbar/>
+      <Navbar />
 
       <div className="row home-blogs">
         <div className="col-sm-6 left-logo">
@@ -47,8 +47,7 @@ const Home = () => {
           <Blog key={index} item={item}></Blog>
         ))}
       </div>
-      <Footer/>
-      
+      <Footer />
     </React.Fragment>
   );
 };
