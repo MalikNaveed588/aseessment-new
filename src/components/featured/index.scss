@@ -1,0 +1,17 @@
+.main-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.container {
+  display: flex;
+  flex: 1;
+  background-color: red;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid grey;
+  .image {
+    width: 300px;
+  }
+}

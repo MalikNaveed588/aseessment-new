@@ -1,0 +1,30 @@
+.card-custom {
+  display: flex;
+  width: 700px;
+  background-color: "#B8B8B8";
+  border-radius: 100px;
+
+  cursor: pointer;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.number-line {
+  // border: solid black 3px;
+  height: 100px;
+  overflow: hidden;
+}
+.subtitle {
+  height: 50px;
+  overflow: hidden;
+}
+.card {
+  background-color: blue;
+  margin-top: 116px;
+  margin-left: 0px;
+  box-shadow: 1px 1px 9px 1px #888888;
+
+}

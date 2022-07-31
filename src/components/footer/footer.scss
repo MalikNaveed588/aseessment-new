@@ -1,0 +1,19 @@
+.footer-style{
+    height:300px;
+    color:white;
+    .left-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items:flex-end;
+        font-size: "700";
+        .left-text{
+            width: 400px;
+           
+        }
+       
+    }
+
+
+}
